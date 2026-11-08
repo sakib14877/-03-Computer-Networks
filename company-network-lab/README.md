@@ -4,7 +4,7 @@ A multi-department company network with a core switch,
 6 VLANs, inter-VLAN routing, a server room and internet access.
 
 ## Topology
-![topology](topology.png)
+![topology](Screenshot 2026-11-08 191001.png)
 
 ## What I implemented
 - Layer 3 core switch (3560) with SVIs
