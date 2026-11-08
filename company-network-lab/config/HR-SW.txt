@@ -1,0 +1,10 @@
+enable
+configure terminal
+hostname SW-HR
+vlan 10
+ name HR
+interface fa0/1
+ switchport mode trunk
+interface range fa0/2 - 24
+ switchport mode access
+ switchport access vlan 10
