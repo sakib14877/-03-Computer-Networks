@@ -1,0 +1,10 @@
+enable
+configure terminal
+hostname ISP
+interface g0/0
+ ip address 203.0.113.1 255.255.255.252
+ no shutdown
+interface loopback 0
+ ip address 8.8.8.8 255.255.255.255
+exit
+ip route 192.168.0.0 255.255.0.0 203.0.113.2
