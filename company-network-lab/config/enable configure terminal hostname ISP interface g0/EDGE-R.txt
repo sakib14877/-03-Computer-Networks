@@ -1,0 +1,12 @@
+enable
+configure terminal
+hostname EDGE-R
+interface g0/0
+ ip address 203.0.113.2 255.255.255.252
+ no shutdown
+interface g0/1
+ ip address 10.0.0.1 255.255.255.252
+ no shutdown
+exit
+ip route 0.0.0.0 0.0.0.0 203.0.113.1
+ip route 192.168.0.0 255.255.0.0 10.0.0.2
